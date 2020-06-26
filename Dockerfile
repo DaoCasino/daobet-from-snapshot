@@ -12,4 +12,4 @@ RUN \
   pip3 install boto3
 
 
-CMD ["bash", "./entrypoint.sh"]
+ENTRYPOINT ["bash", "./entrypoint.sh"]
