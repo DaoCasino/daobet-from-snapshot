@@ -7,6 +7,7 @@ wget https://github.com/DaoCasino/daobet-snapshot-loader/raw/master/snapshot-loa
 
 # Download snapshot and save path
 export ENV_NAME=${ENV}
+export DOWNLOAD_PATH='/snapshots'
 DAOBET_SNAPSHOT_PATH=$(python3 snapshot-loader.py --last-load)
 
 mkdir -p ${DAOBET_DATA_DIR}
