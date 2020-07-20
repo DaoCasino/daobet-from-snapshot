@@ -1,4 +1,4 @@
-FROM daocasino/daobet:v2.0.1
+FROM daocasino/daobet:v2.0.2
 
 WORKDIR /daobet
 
