@@ -2,14 +2,13 @@
 
 set -eux
 
-ENV="${ENV:-testnet}"
+ENV_NAME="${ENV_NAME:-testnet}"
 DAOBET_DATA_DIR="${DAOBET_DATA_DIR:-/data}"
-DAOBET_CONFIG_DIR="/etc/daobet/configs/${ENV}"
+DAOBET_CONFIG_DIR="/etc/daobet/configs/${ENV_NAME}"
 
 # Donwload snapshot loader tool
 wget https://github.com/DaoCasino/daobet-snapshot-loader/raw/master/snapshot-loader.py
 
-export ENV_NAME="${ENV}"
 export DOWNLOAD_PATH='/snapshots'
 # Clear old data if it already exists
 rm -rf "${DAOBET_DATA_DIR}"/*
